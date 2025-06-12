@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opening Borrowlog App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function openApp() {
+      // Read the invite ID from the URL query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const inviteId = urlParams.get('link');
+
+      if (!inviteId) {
+        document.body.innerText = 'Invalid or missing invite link.';
+        return;
+      }
+
+      // Construct the deep link URL
+      const deepLink = `borrowlog://invite/contact/${inviteId}`;
+
+      // Try to open the app
+      window.location.href = deepLink;
+
+      // Fallback to store after delay (e.g. 2 seconds)
+      setTimeout(function() {
+        // Replace this with your real store URL
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.yourapp.package';
+      }, 2000);
+    }
+
+    window.onload = openApp;
+  </script>
+</head>
+<body>
+  <p>Opening Borrowlog App...</p>
+</body>
+</html>
