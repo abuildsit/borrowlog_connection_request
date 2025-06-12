@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Well... Something ain't right...</h1>
+  <p>It looks like you don't have the app installed.</p>
+  <p>As BorrowLog is in Alpha, Please contact <a href="mailto:abuildsit@gmail.com">abuildsit@gmail.com</a> for access to the app</p>
+  <p>(Or to tell me what broke 😄)</p>
+</body>
+</html>
